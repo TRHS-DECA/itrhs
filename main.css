@@ -1,0 +1,120 @@
+@import url('css/ionic.css');
+@import url('css/themes/ionic-ios7.css');
+@import url('//fonts.googleapis.com/css?family=Lato:300');
+
+body {
+	font-family: Lato, sans-serif;
+	padding-top:40px;
+	padding-bottom: 40px;
+	position:relative;
+	overflow-y:scroll;
+	color:#666;
+}
+
+.tabs {
+	position:fixed;
+	bottom:0;
+	padding-left:5px;
+}
+
+.bar-header {
+	position:fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:Lato, sans-serif;
+	font-weight:700;
+	color:#666;
+}
+
+input[type='text'], textarea {
+	color:inherit;
+	font-family:inherit;
+	text-align: center;
+}
+
+.tab-item {
+	font-size:12px;
+}
+
+.tab-item.more {
+	margin-left: -3%;
+}
+
+.content {
+	text-align: center;
+}
+
+.schedSubmit {
+	margin-top:10px;
+}
+
+/*Just elminating all of the cruft from the AJAX request from the DCSD site. MAKE AN API, guys!*/
+.weatherDeets #header,
+ .span-4, 
+ #sctabs ul,
+ .sc_accordion,
+ #bottomNav,
+ .weatherDeets #footer,
+ #sctabs-2,
+ #sctabs-3,
+ #container {
+	display: none;
+}
+
+.weatherDeets {
+	margin-top:-50%;
+}
+
+.closure_area_header h2, .closure_area_header h3 {
+	font-size: 1em;
+}
+
+.closure_area_school_status_open p, .closure_area_school_status_open span {
+	font-size:2.5em;
+	padding:10px;
+}
+
+.span-6 {
+	width: 300px;
+	margin-left: -3%;
+	margin-bottom: 5px;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,.1);
+	border-bottom: 2px solid rgba(0,0,0,.1);
+	border-radius: 3px;
+}
+
+.loading {
+	position:absolute;
+	margin:auto;
+	background: rgba(0,0,0,0);
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.rule {
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 5px;
+	width: 100%;
+}
+
+.dates.list, .rules.list {
+	padding-bottom:75px;
+}
+
+p[ng-bind='date.n']:before {
+	content: '\f149';
+	font-family: Ionicons;
+	position: absolute;
+	left: 5px;
+}
+
+p[ng-bind='date.d']:before {
+	content: '\f117';
+	font-family: Ionicons;
+	position: absolute;
+	left: 5px;
+}
